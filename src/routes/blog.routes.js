@@ -4,7 +4,7 @@ const { getAllBlogs, getBlogById, postANewBlog, deleteABlogById, updateABlogById
 
 const router =  express.Router();
 
-// get all blogs
+// get all blog
 router.get('/', getAllBlogs)
 
 // get a single blog by id
