@@ -15,7 +15,7 @@ app.use('/blogs', blogRoutes)
 
 // mongoose configuration
 async function main() {
-    // await mongoose.connect(process.env.DB_URL);
+    await mongoose.connect(process.env.DB_URL);
      app.get('/', (req, res) => {
         res.send('Meta Blog App Sever is runinng...!')
 })
