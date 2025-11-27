@@ -10,6 +10,7 @@ const getAllBlogs = async (req, res) => {
         console.error("Error fetching all blogs", error)
         res.status(500).send({message: "Error fetching all blogs", error})
     }
+    res.status(200).send({message: "Blogs fetched successfully"})
 }
 
 // get a single blog by id
